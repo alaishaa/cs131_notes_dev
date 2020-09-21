@@ -4,11 +4,15 @@ keywords: (insert comma-separated keywords here)
 order: 2 # Lecture number for 2020
 ---
 
-**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Images and Transformations #
 
-Testing student changes to markdown.
+## Image Types ##
+In computer vision, the three most common types of images are:
+1. binary
+2. grayscale
+3. color
+
+### Binary image representation ###
+A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
+
+![Binary image representation](/images_and_transformations_images/image8.png)
