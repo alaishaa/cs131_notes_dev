@@ -15,4 +15,4 @@ In computer vision, the three most common types of images are:
 ### Binary image representation ###
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
-![Binary image representation](/images_and_transformations_images/image8.png)
+![Binary image representation](images_and_transformations_images/image8.png)
