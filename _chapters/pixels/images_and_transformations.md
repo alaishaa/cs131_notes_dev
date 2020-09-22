@@ -18,6 +18,7 @@ FIX: Add intro paragraph here to define topic and lay out structure.
 - [Rotation](#rotation)
 - [Scaling](#scaling)
 
+<a name='Image Types'></a>
 
 ## Image Types
 In computer vision, the three most common types of images are:
@@ -25,21 +26,28 @@ In computer vision, the three most common types of images are:
 2. grayscale
 3. color
 
+<a name='Binary image representation'></a>
 ### Binary image representation 
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
-![Binary image representation](images_and_transformations_images/image8.png)
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/images_and_transformations_images/image8.png">
+  <div class="figcaption">Binary Image</div>
+</div>
 
-### Grayscale image representation ###
+<a name='Grayscale image representation'></a>
+### Grayscale image representation
 A grayscale image is stored as a 2D matrix of grayscale values. Each element is considered a pixel, and each pixel can take on values from 0 (black) to 255 (white), which represent the intensity or grayscale value.
 ![Grayscale image representation](images_and_transformations_images/image15.png)
 
-### Color image representation ###
+<a name='Color image representation'></a>
+### Color image representation
 A color image is stored as a 3D matrix of a stack of RGB channels. Each element is considered a pixel, and each pixel contains a stack of three channels that represents a mixture of red, green, and blue components.
 ![Color image representation](images_and_transformations_images/image1.png)
 A single channel is a 2D matrix where each element is considered a pixel, and each pixel can take on values from 0 (black) to 255 (the color of the channel). The value of each pixel represents how much the color of the channel contributes to the overall color of the pixel.
 ![Single color channel](images_and_transformations_images/image17.png)
 
+<a name='Images are sampled and quantized'></a>
 ## Images are sampled and quantized ##
 - Sampling Errors
     - Image is formed by sampling, making it an approximation
@@ -66,7 +74,8 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
     - Information is lost and can’t be represented because of it
 - Images are still useful even when they are approximations!
 
-## Transformation Matrices ##
+<a name='Transformation Matrices'></a>
+## Transformation Matrices
 Matrices can be used to transform vectors by performing matrix multiplication. p’ = Ap
 
 The simplest application is scaling a vector: 
@@ -92,7 +101,8 @@ Transform<sub>net</sub> = (R<sub>B</sub>R<sub>A</sub>S)
 
 p’ = (Transform<sub>net</sub>) p
 
-## Homogeneous Coordinates ##
+<a name='Homogeneous Coordinates'></a>
+## Homogeneous Coordinates
 Matrix multiplication allows us to make linear combinations of vector components ―
 ![vector components](images_and_transformations_images/image2.png)
 ― and this is sufficient for the scaling, rotating, and skewing transformations that we have seen so far. However, this kind of multiplication between vector components does not allow us to add constants, which means that we cannot produce a translated vector such as <x+k, y+k>.
@@ -104,13 +114,15 @@ Note that compared with the first example, the dimensions of the matrix/vector b
 
 Also, there is a particular reason that the homogeneous transformation matrix has [0, 0, 1] as its bottom row; we’d like the resultant vector to end up with a “1” at the bottom. This is a convention, and let’s dig deeper into a case in which this might be helpful.
 
-### Division ###
+<a name='Division'></a>
+### Division
 There are times when we may want to divide the resultant vector by something. For example, we may want to divide by a coordinate to scale something down as it gets farther away in an image. However, there is no actual way to divide in matrix multiplication. 
 
 This is where the convention of the homogeneous coordinates with “1” values come into play. Often, we will simply divide the result of the last coordinate after doing a matrix multiplication as we see below.
 ![division](images_and_transformations_images/image7.png)
 
-## Translation ##
+<a name='Translation'></a>
+## Translation
 **Goal:** given a coordinate p, produce a resultant coordinate p’ such that p’ is a translated version of p.
 ![translated p](images_and_transformations_images/image16.png)
 We can use a translation matrix as follows:
@@ -119,10 +131,12 @@ We can use a translation matrix as follows:
 You may notice that the top left makes up an identity matrix and the top right represents the translation amount, as highlighted below. Therefore, we can rewrite the matrix as shown below. 
 ![rewritten translation matrix](images_and_transformations_images/image3.png)
 
-## Rotation ##
+<a name='Rotation'></a>
+## Rotation
 text
 
-## Scaling ##
+<a name='Scaling'></a>
+## Scaling
 **Goal:** given a coordinate p, produce a resultant coordinate p’ such that p’ is a scaled version of p.
 ![scaled p](images_and_transformations_images/image11.png)
 We can use a **scaling matrix** as follows:
