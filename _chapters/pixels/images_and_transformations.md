@@ -1,21 +1,34 @@
 ---
-title: Images and transformations
+title: Images and Transformations
 keywords: image, binary, color, transformation, scaling, translation, rotation
 order: 2 # Lecture number for 2020
 ---
 
-# Images and Transformations #
+FIX: Add intro paragraph here to define topic and lay out structure.
 
-## Image Types ##
+- [Image Types](#image-types)
+	- [Binary Image Representation](#binary-image-representation)
+	- [Grayscale Image Representation](#grayscale-image-representation)
+	- [Color Image Representation](#color-image-representation)
+- [Images are Sampled and Quantized](#images-are-sampled-and-quantized)
+- [Transformation Matrices](#transformation-matrices)
+- [Homogeneous Coordinates](#homogeneous-coordinates)
+	- [Division](#division)
+- [Translation](#translation)
+- [Rotation](#rotation)
+- [Scaling](#scaling)
+
+
+## Image Types
 In computer vision, the three most common types of images are:
 1. binary
 2. grayscale
 3. color
 
-### Binary image representation ###
+### Binary image representation 
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
-![Binary image representation](/images_and_transformations_images/image8.png)
+![Binary image representation](images_and_transformations_images/image8.png)
 
 ### Grayscale image representation ###
 A grayscale image is stored as a 2D matrix of grayscale values. Each element is considered a pixel, and each pixel can take on values from 0 (black) to 255 (white), which represent the intensity or grayscale value.
