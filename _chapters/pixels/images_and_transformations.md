@@ -31,7 +31,7 @@ In computer vision, the three most common types of images are:
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/images_and_transformations_images/image8.png">
+  <img src="{{ site.baseurl }}/_chapters/pixels/images_and_transformations_images/image8.png">
   <div class="figcaption">Binary Image</div>
 </div>
 
