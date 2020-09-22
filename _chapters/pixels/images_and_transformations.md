@@ -15,7 +15,7 @@ In computer vision, the three most common types of images are:
 ### Binary image representation ###
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
-![Binary image representation](images_and_transformations_images/image8.png)
+![Binary image representation](/images_and_transformations_images/image8.png)
 
 ### Grayscale image representation ###
 A grayscale image is stored as a 2D matrix of grayscale values. Each element is considered a pixel, and each pixel can take on values from 0 (black) to 255 (white), which represent the intensity or grayscale value.
