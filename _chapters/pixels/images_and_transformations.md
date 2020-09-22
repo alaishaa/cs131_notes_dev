@@ -67,7 +67,7 @@ Multiple transformation matrices can be used to transform a point. For example, 
 2. Rotation A
 3. Rotation B
 
-Then we can write $$p’ = R_BR_ASp = R_B(R_A (Sp)))$$
+Then we can write p’ = R<sub>B</sub>R<sub>A</sub>Sp = R<sub>B</sub>(R<sub>A</sub> (Sp)))
 
 The effect of this is to apply their transformations one after the other, from **right to left**. It is important to note that transformations are applied right to left. 
 
@@ -75,9 +75,9 @@ The effect of this is to apply their transformations one after the other, from *
 
 Equivalently, we can **first** multiply all the transformation matrices together to create a net change matrix:
 
-$$Transform_{net} = (R_BR_AS)$$
+Transform<sub>net</sub> = (R<sub>B</sub>R<sub>A</sub>S)
 
-$$p’ = (Transform_{net}) p$$
+p’ = (Transform<sub>net</sub>) p
 
 ## Homogeneous Coordinates ##
 Matrix multiplication allows us to make linear combinations of vector components ―
