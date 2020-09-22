@@ -31,8 +31,8 @@ In computer vision, the three most common types of images are:
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/_chapters/pixels/images_and_transformations_images/image8.png">
-  <div class="figcaption">Binary Image</div>
+  <img src="{{ site.baseurl }}_chapters/pixels/images_and_transformations_images/image8.png">
+  <div class="figcaption">Binary Image TEST</div>
 </div>
 
 <a name='Grayscale image representation'></a>
@@ -89,7 +89,7 @@ Multiple transformation matrices can be used to transform a point. For example, 
 2. Rotation A
 3. Rotation B
 
-Then we can write p’ = R<sub>B</sub>R<sub>A</sub>Sp = R<sub>B</sub>(R<sub>A</sub> (Sp)))
+Then we can write \\( p' = R_BR_ASp=R_B(R_A(Sp))) \\) 
 
 The effect of this is to apply their transformations one after the other, from **right to left**. It is important to note that transformations are applied right to left. 
 
@@ -97,9 +97,9 @@ The effect of this is to apply their transformations one after the other, from *
 
 Equivalently, we can **first** multiply all the transformation matrices together to create a net change matrix:
 
-Transform<sub>net</sub> = (R<sub>B</sub>R<sub>A</sub>S)
+\\[ Transform_{net} = (R_BR_AS) \\]
 
-p’ = (Transform<sub>net</sub>) p
+\\[ p' = (Transform_{net})p \\]
 
 <a name='Homogeneous Coordinates'></a>
 ## Homogeneous Coordinates
