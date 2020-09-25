@@ -4,7 +4,8 @@ keywords: image, binary, color, transformation, scaling, translation, rotation
 order: 2 # Lecture number for 2020
 ---
 <div align="center"> 
-	Completed by: Alaisha Alexander, Mehul Arora, Daniel Huang, Will Kenney, Tony Kim, Anne Lee, Tassica Lim, and Jen Moore 
+	Completed by: 
+	Alaisha Alexander, Mehul Arora, Daniel Huang, Will Kenney, Tony Kim, Anne Lee, Tassica Lim, and Jen Moore 
 </div>
 - [Image Types](#image-types)
 	- [Binary Image Representation](#binary-image-representation)
