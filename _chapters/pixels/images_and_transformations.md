@@ -29,8 +29,8 @@ In computer vision, the three most common types of images are:
 A binary image is stored as a 2D matrix of binary values. Each element is considered a pixel, and each pixel can only take two values: 0 (black) or 1 (white).
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image8.png" width="75%">
-  <div class="figcaption">Binary Image Adjusted</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image8.png" width="85%">
+  <div class="figcaption">Binary Image</div>
 </div>
 
 <a name='Grayscale image representation'></a>
@@ -47,14 +47,14 @@ A grayscale image is stored as a 2D matrix of grayscale values. Each element is 
 A color image is stored as a 3D matrix of a stack of RGB channels. Each element is considered a pixel, and each pixel contains a stack of three channels that represents a mixture of red, green, and blue components.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image1.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image1.png" width="85%">
   <div class="figcaption">Color Image</div>
 </div>
 
 A single channel is a 2D matrix where each element is considered a pixel, and each pixel can take on values from 0 (black) to 255 (the color of the channel). The value of each pixel represents how much the color of the channel contributes to the overall color of the pixel.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image17.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image17.png" width="65%">
   <div class="figcaption">Single Channel Image</div>
 </div>
 
@@ -66,22 +66,24 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
         - Pixels with various grayscale values show texture
         - Much more difficult to represent curves, because pixels are not continuous
 
+
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image10.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image10.png" width="50%">
   <div class="figcaption">Grayscale Image Zoomed</div>
 </div>
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image13.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image13.png" width="85%">
   <div class="figcaption">Sampling</div>
 </div>
+
     - Improve accuracy by increasing number of pixels per unit, increasing resolution
     - Resolution
         - Sampling parameter
         - Dots per inch (DPI), pixel density
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image9.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image9.png" width="50%">
   <div class="figcaption">DPI Example</div>
 </div>
 
@@ -94,14 +96,15 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
             - Where R/G/B = [0, 255]
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image14.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image14.png" width="85%">
   <div class="figcaption">Grayscale Image Zoomed Pixels Identified</div>
 </div>
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image5.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image5.png" width="85%">
   <div class="figcaption">Color Image Pixels Identified</div>
 </div>
+
     - Information is lost and can’t be represented because of it
 - Images are still useful even when they are approximations!
 
@@ -110,21 +113,23 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
 Matrices can be used to transform vectors by performing matrix multiplication. p’ = Ap
 
 The simplest application is scaling a vector: 
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image24.png">
+  <div class="figcaption">Scaling</div>
+</div>
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image25.png">
+  <div class="figcaption">Scaling Example</div>
 </div>
 
 Matrices like **A** in the example above are known as transformation matrices. 
 
 Another example is rotation:
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image23.png">
+  <div class="figcaption">Rotation Matrix</div>
 </div>
-This is the matrix used to rotate a point by \\(\theta\\) degrees **anti-clockwise**.
+This is the matrix used to rotate a point by \\(\theta\\) degrees **counter-clockwise**.
 
 
 Multiple transformation matrices can be used to transform a point. For example, if we want to perform three transformations to a point: 
@@ -180,18 +185,18 @@ This is where the convention of the homogeneous coordinates with “1” values 
 ## Translation
 **Goal:** given a coordinate p, produce a resultant coordinate p’ such that p’ is a translated version of p.
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image16.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image16.png" width="85%">
   <div class="figcaption">Translated p</div>
 </div>
 We can use a translation matrix as follows:
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image6.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image6.png" width="65%">
   <div class="figcaption">Translation Matrix</div>
 </div>
 
 You may notice that the top left makes up an identity matrix and the top right represents the translation amount, as highlighted below. Therefore, we can rewrite the matrix as shown below. 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image3.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image3.png" width="65%">
   <div class="figcaption">Rewritten Translation Matrix</div>
 </div>
 
@@ -199,12 +204,12 @@ You may notice that the top left makes up an identity matrix and the top right r
 ## Scaling
 **Goal:** given a coordinate p, produce a resultant coordinate p’ such that p’ is a scaled version of p.
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image11.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image11.png" width="85%">
   <div class="figcaption">Scaled p</div>
 </div>
 We can use a **scaling matrix** as follows:
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image4.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image4.png" width="65%">
   <div class="figcaption">Scaling Matrix</div>
 </div>
 
@@ -222,29 +227,23 @@ We can combine scaling with other operations, such as translation:
 ## Rotation
 **Goal:** given a coordinate p, produce a resultant coordinate p’ such that p’ is a rotated version of p.
 
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image22.png">
+  <div class="figcaption">Rotation</div>
 </div>
 
 We can use a **2D rotation matrix**, as follows, to rotate a coordinate p with coordinates (x, y) counterclockwise around the origin by degree Θ, resulting in the coordinate p’ with coordinate (x’, y’)
 
-
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image23.png">
+  <div class="figcaption">Rotation Matrix</div>
 </div>
 
 **Rotation matrix properties:**
 Note that rotation matrices are normal matrices and the transpose of a rotation matrix produces a rotation in the opposite (i.e. clockwise) direction. Accordingly, the following are true:
 
-
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image19.png">
 </div>
 
 In other words, since a rotation matrix and its transposed matrix are equivalent rotations in opposite directions, performing both operations consecutively results in no change to the original coordinate.
@@ -254,10 +253,8 @@ Additionally, the rows and columns of a rotation matrix are always orthogonal un
 **Combine operations:**
 We can combine rotations with scaling and translations:
 
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
-  <div class="figcaption">Grayscale Image</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image20.png">
 </div>
 
 **Note** once again that order of operations matters, so translating and then rotating is not the same as rotating and then translating.
@@ -265,8 +262,7 @@ We can combine rotations with scaling and translations:
 **General-purpose transformation matrix**
 Finally, we can simplify the above combined operations and put them in the form of the general-purpose transformation matrix, as seen below.
 
-# FIX PICTURE HERE! #
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image15.png">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image21.png">
   <div class="figcaption">Grayscale Image</div>
 </div>
