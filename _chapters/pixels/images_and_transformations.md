@@ -73,15 +73,8 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image10.png" width="40%">
   <div class="figcaption">Grayscale Image Zoomed</div>
-</div>
-
-<div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image13.png" width="85%">
   <div class="figcaption">Sampling</div>
-</div>
-
-
-<div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image9.png" width="25%">
   <div class="figcaption">DPI Example</div>
 </div>
@@ -103,11 +96,6 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
   <div class="figcaption">Color Image Pixels Identified</div>
 </div>
 
-<div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image5.png" width="55%">
-  <div class="figcaption">Color Image Pixels Identified</div>
-</div>
-
 <a name='Transformation Matrices'></a>
 ## Transformation Matrices
 Matrices can be used to transform vectors by performing matrix multiplication. p’ = Ap
@@ -116,8 +104,6 @@ The simplest application is scaling a vector:
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image24.png" width="35%">
   <div class="figcaption">Scaling</div>
-</div>
-<div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image25.png" width="85%">
   <div class="figcaption">Scaling Example</div>
 </div>
@@ -263,5 +249,5 @@ We can combine rotations with scaling and translations:
 Finally, we can simplify the above combined operations and put them in the form of the general-purpose transformation matrix, as seen below.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image21.png" width="30%">
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image21.png" width="65%">
 </div>
