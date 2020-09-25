@@ -65,7 +65,10 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
         - Can see distinct pixels if you zoom in on an image
         - Pixels with various grayscale values show texture
         - Much more difficult to represent curves, because pixels are not continuous
-
+    - Improve accuracy by increasing number of pixels per unit, increasing resolution
+    - Resolution
+        - Sampling parameter
+        - Dots per inch (DPI), pixel density
 
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image10.png" width="40%">
@@ -76,10 +79,7 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image13.png" width="85%">
   <div class="figcaption">Sampling</div>
 </div>
-    - Improve accuracy by increasing number of pixels per unit, increasing resolution
-    - Resolution
-        - Sampling parameter
-        - Dots per inch (DPI), pixel density
+
 
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image9.png" width="25%">
@@ -93,18 +93,20 @@ A single channel is a 2D matrix where each element is considered a pixel, and ea
         - Grayscale = [0, 255]
         - Color: [R, G, B]
             - Where R/G/B = [0, 255]
+    - Information is lost and can’t be represented because of it
+- Images are still useful even when they are approximations!
 
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image14.png" width="55%">
   <div class="figcaption">Grayscale Image Zoomed Pixels Identified</div>
+  <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image5.png" width="55%">
+  <div class="figcaption">Color Image Pixels Identified</div>
 </div>
 
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/images_and_transformations_images/image5.png" width="55%">
   <div class="figcaption">Color Image Pixels Identified</div>
 </div>
-    - Information is lost and can’t be represented because of it
-- Images are still useful even when they are approximations!
 
 <a name='Transformation Matrices'></a>
 ## Transformation Matrices
